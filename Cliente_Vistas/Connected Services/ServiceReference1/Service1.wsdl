@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63818/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63818/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63818/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1" />
+      <xsd:import schemaLocation="http://localhost:63818/Service1.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:63818/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Loginusuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:Loginusuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Loginusuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginusuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPost" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearEvento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearArtistas_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearArtistas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearArtistas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearArtistasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearFandom_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearFandom" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearFandom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearFandomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearAgencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearAgencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrearAgencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarArtistas_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarArtistas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarArtistas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarArtistasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarEvento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarFandom_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFandom" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarFandom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFandomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarAgencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarAgencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarAgencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarPost" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarROficial_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarROficial" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarROficial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarROficialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarROArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarROArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarROArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarROArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarLinkstream_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarLinkstream" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarLinkstream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarLinkstreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarSubsworld_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarSubsworld" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarSubsworld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarSubsworldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarPrensa_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarPrensa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarPrensa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarPrensaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarFotosfan_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFotosfan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarFotosfan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFotosfanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarFotoscut_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFotoscut" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditarFotoscut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarFotoscutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarArtistas_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarArtistas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarArtistas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarArtistasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarEvento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFandom_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFandom" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFandom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFandomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarAgencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAgencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarAgencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarPost" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarROficial_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarROficial" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarROficial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarROficialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarROArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarROArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarROArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarROArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarLinkstream_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarLinkstream" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarLinkstream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarLinkstreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarSubsworld_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarSubsworld" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarSubsworld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarSubsworldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarPrensa_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarPrensa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarPrensa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarPrensaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFotosfan_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFotosfan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFotosfan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFotosfanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFotoscut_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFotoscut" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFotoscut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFotoscutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEvento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarFandom_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFandom" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarFandom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFandomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarAgencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarAgencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarAgencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPost" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarROficial_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarROficial" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarROficial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarROficialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarROArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarROArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarROArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarROArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarLinkstream_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarLinkstream" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarLinkstream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarLinkstreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarSubworld_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarSubworld" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarSubworld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarSubworldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarPrensa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPrensa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarPrensa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPrensaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarFotofan_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFotofan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarFotofan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFotofanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarFotoCut_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFotoCut" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarFotoCut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFotoCutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarEventoxfecha_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEventoxfecha" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarEventoxfecha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEventoxfechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarFandom_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFandom" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarFandom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFandomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarAgencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarAgencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarAgencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPost" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarROficial_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarROficial" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarROficial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarROficialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarROArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarROArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarROArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarROArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarLinkstream_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarLinkstream" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarLinkstream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarLinkstreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarSubsworld_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSubsworld" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarSubsworld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSubsworldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarPrensa_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPrensa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarPrensa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPrensaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarFotosfan_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFotosfan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarFotosfan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFotosfanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarSFotoscut_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSFotoscut" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarSFotoscut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSFotoscutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CboAgencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:CboAgencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CboAgencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CboAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CboArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:CboArtista" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CboArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CboArtistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarEventoxnombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEventoxnombre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BuscarEventoxnombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEventoxnombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeshabilitarFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeshabilitarFan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeshabilitarFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeshabilitarFanResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Loginusuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Loginusuario" message="tns:IService1_Loginusuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginusuarioResponse" message="tns:IService1_Loginusuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrearPost" message="tns:IService1_CrearPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrearPostResponse" message="tns:IService1_CrearPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearEvento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrearEvento" message="tns:IService1_CrearEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrearEventoResponse" message="tns:IService1_CrearEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrearAdmin" message="tns:IService1_CrearAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrearAdminResponse" message="tns:IService1_CrearAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearArtistas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrearArtistas" message="tns:IService1_CrearArtistas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrearArtistasResponse" message="tns:IService1_CrearArtistas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearFandom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrearFandom" message="tns:IService1_CrearFandom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrearFandomResponse" message="tns:IService1_CrearFandom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearAgencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrearAgencia" message="tns:IService1_CrearAgencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrearAgenciaResponse" message="tns:IService1_CrearAgencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarArtistas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarArtistas" message="tns:IService1_EditarArtistas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarArtistasResponse" message="tns:IService1_EditarArtistas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarEvento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarEvento" message="tns:IService1_EditarEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarEventoResponse" message="tns:IService1_EditarEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarFandom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarFandom" message="tns:IService1_EditarFandom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarFandomResponse" message="tns:IService1_EditarFandom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarAgencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarAgencia" message="tns:IService1_EditarAgencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarAgenciaResponse" message="tns:IService1_EditarAgencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarPost" message="tns:IService1_EditarPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarPostResponse" message="tns:IService1_EditarPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarAdmin" message="tns:IService1_EditarAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarAdminResponse" message="tns:IService1_EditarAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarROficial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarROficial" message="tns:IService1_EditarROficial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarROficialResponse" message="tns:IService1_EditarROficial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarROArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarROArtista" message="tns:IService1_EditarROArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarROArtistaResponse" message="tns:IService1_EditarROArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarLinkstream">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarLinkstream" message="tns:IService1_EditarLinkstream_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarLinkstreamResponse" message="tns:IService1_EditarLinkstream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarSubsworld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarSubsworld" message="tns:IService1_EditarSubsworld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarSubsworldResponse" message="tns:IService1_EditarSubsworld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarPrensa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarPrensa" message="tns:IService1_EditarPrensa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarPrensaResponse" message="tns:IService1_EditarPrensa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarFotosfan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarFotosfan" message="tns:IService1_EditarFotosfan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarFotosfanResponse" message="tns:IService1_EditarFotosfan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarFotoscut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditarFotoscut" message="tns:IService1_EditarFotoscut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditarFotoscutResponse" message="tns:IService1_EditarFotoscut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarArtistas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarArtistas" message="tns:IService1_EliminarArtistas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarArtistasResponse" message="tns:IService1_EliminarArtistas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarEvento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarEvento" message="tns:IService1_EliminarEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarEventoResponse" message="tns:IService1_EliminarEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFandom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarFandom" message="tns:IService1_EliminarFandom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarFandomResponse" message="tns:IService1_EliminarFandom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAgencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarAgencia" message="tns:IService1_EliminarAgencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarAgenciaResponse" message="tns:IService1_EliminarAgencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarPost" message="tns:IService1_EliminarPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarPostResponse" message="tns:IService1_EliminarPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarAdmin" message="tns:IService1_EliminarAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarAdminResponse" message="tns:IService1_EliminarAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarROficial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarROficial" message="tns:IService1_EliminarROficial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarROficialResponse" message="tns:IService1_EliminarROficial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarROArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarROArtista" message="tns:IService1_EliminarROArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarROArtistaResponse" message="tns:IService1_EliminarROArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarLinkstream">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarLinkstream" message="tns:IService1_EliminarLinkstream_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarLinkstreamResponse" message="tns:IService1_EliminarLinkstream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSubsworld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarSubsworld" message="tns:IService1_EliminarSubsworld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarSubsworldResponse" message="tns:IService1_EliminarSubsworld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarPrensa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarPrensa" message="tns:IService1_EliminarPrensa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarPrensaResponse" message="tns:IService1_EliminarPrensa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotosfan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarFotosfan" message="tns:IService1_EliminarFotosfan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarFotosfanResponse" message="tns:IService1_EliminarFotosfan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotoscut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarFotoscut" message="tns:IService1_EliminarFotoscut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarFotoscutResponse" message="tns:IService1_EliminarFotoscut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarFan" message="tns:IService1_EliminarFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarFanResponse" message="tns:IService1_EliminarFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarArtista" message="tns:IService1_ListarArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarArtistaResponse" message="tns:IService1_ListarArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarEvento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarEvento" message="tns:IService1_ListarEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarEventoResponse" message="tns:IService1_ListarEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFandom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarFandom" message="tns:IService1_ListarFandom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarFandomResponse" message="tns:IService1_ListarFandom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAgencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarAgencia" message="tns:IService1_ListarAgencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarAgenciaResponse" message="tns:IService1_ListarAgencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarPost" message="tns:IService1_ListarPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarPostResponse" message="tns:IService1_ListarPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarAdmin" message="tns:IService1_ListarAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarAdminResponse" message="tns:IService1_ListarAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarROficial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarROficial" message="tns:IService1_ListarROficial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarROficialResponse" message="tns:IService1_ListarROficial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarROArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarROArtista" message="tns:IService1_ListarROArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarROArtistaResponse" message="tns:IService1_ListarROArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarLinkstream">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarLinkstream" message="tns:IService1_ListarLinkstream_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarLinkstreamResponse" message="tns:IService1_ListarLinkstream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarSubworld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarSubworld" message="tns:IService1_ListarSubworld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarSubworldResponse" message="tns:IService1_ListarSubworld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPrensa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarPrensa" message="tns:IService1_ListarPrensa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarPrensaResponse" message="tns:IService1_ListarPrensa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFotofan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarFotofan" message="tns:IService1_ListarFotofan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarFotofanResponse" message="tns:IService1_ListarFotofan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFotoCut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarFotoCut" message="tns:IService1_ListarFotoCut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarFotoCutResponse" message="tns:IService1_ListarFotoCut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarFan" message="tns:IService1_BuscarFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarFanResponse" message="tns:IService1_BuscarFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarArtista" message="tns:IService1_BuscarArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarArtistaResponse" message="tns:IService1_BuscarArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoxfecha">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarEventoxfecha" message="tns:IService1_BuscarEventoxfecha_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarEventoxfechaResponse" message="tns:IService1_BuscarEventoxfecha_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFandom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarFandom" message="tns:IService1_BuscarFandom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarFandomResponse" message="tns:IService1_BuscarFandom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAgencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarAgencia" message="tns:IService1_BuscarAgencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarAgenciaResponse" message="tns:IService1_BuscarAgencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarPost" message="tns:IService1_BuscarPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarPostResponse" message="tns:IService1_BuscarPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarAdmin" message="tns:IService1_BuscarAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarAdminResponse" message="tns:IService1_BuscarAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarROficial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarROficial" message="tns:IService1_BuscarROficial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarROficialResponse" message="tns:IService1_BuscarROficial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarROArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarROArtista" message="tns:IService1_BuscarROArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarROArtistaResponse" message="tns:IService1_BuscarROArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLinkstream">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarLinkstream" message="tns:IService1_BuscarLinkstream_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarLinkstreamResponse" message="tns:IService1_BuscarLinkstream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSubsworld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarSubsworld" message="tns:IService1_BuscarSubsworld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarSubsworldResponse" message="tns:IService1_BuscarSubsworld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPrensa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarPrensa" message="tns:IService1_BuscarPrensa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarPrensaResponse" message="tns:IService1_BuscarPrensa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFotosfan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarFotosfan" message="tns:IService1_BuscarFotosfan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarFotosfanResponse" message="tns:IService1_BuscarFotosfan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSFotoscut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarSFotoscut" message="tns:IService1_BuscarSFotoscut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarSFotoscutResponse" message="tns:IService1_BuscarSFotoscut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CboAgencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CboAgencia" message="tns:IService1_CboAgencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CboAgenciaResponse" message="tns:IService1_CboAgencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CboArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CboArtista" message="tns:IService1_CboArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CboArtistaResponse" message="tns:IService1_CboArtista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoxnombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BuscarEventoxnombre" message="tns:IService1_BuscarEventoxnombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BuscarEventoxnombreResponse" message="tns:IService1_BuscarEventoxnombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeshabilitarFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeshabilitarFan" message="tns:IService1_DeshabilitarFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeshabilitarFanResponse" message="tns:IService1_DeshabilitarFan_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Loginusuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/Loginusuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearPost">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrearPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearEvento">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrearEvento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrearAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearArtistas">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrearArtistas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearFandom">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrearFandom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearAgencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrearAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarArtistas">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarArtistas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarEvento">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarEvento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarFandom">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarFandom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarAgencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarPost">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarROficial">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarROficial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarROArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarROArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarLinkstream">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarLinkstream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarSubsworld">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarSubsworld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarPrensa">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarPrensa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarFotosfan">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarFotosfan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarFotoscut">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditarFotoscut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarArtistas">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarArtistas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarEvento">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarEvento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFandom">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarFandom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAgencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarPost">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarROficial">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarROficial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarROArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarROArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarLinkstream">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarLinkstream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSubsworld">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarSubsworld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarPrensa">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarPrensa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotosfan">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarFotosfan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotoscut">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarFotoscut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFan">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarEvento">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarEvento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFandom">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarFandom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAgencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPost">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarROficial">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarROficial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarROArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarROArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarLinkstream">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarLinkstream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarSubworld">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarSubworld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPrensa">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarPrensa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFotofan">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarFotofan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFotoCut">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarFotoCut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFan">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoxfecha">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarEventoxfecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFandom">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarFandom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAgencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPost">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarROficial">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarROficial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarROArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarROArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLinkstream">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarLinkstream" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSubsworld">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarSubsworld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPrensa">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarPrensa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFotosfan">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarFotosfan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSFotoscut">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarSFotoscut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CboAgencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/CboAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CboArtista">
+      <soap:operation soapAction="http://tempuri.org/IService1/CboArtista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoxnombre">
+      <soap:operation soapAction="http://tempuri.org/IService1/BuscarEventoxnombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeshabilitarFan">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeshabilitarFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:63818/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

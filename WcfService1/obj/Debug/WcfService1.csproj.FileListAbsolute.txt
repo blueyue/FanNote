@@ -1,0 +1,14 @@
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.csprojAssemblyReference.cache
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\bin\WcfService1.dll.config
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\bin\WcfService1.dll
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\bin\WcfService1.pdb
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.dll
+G:\SISE\C5\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.pdb
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\bin\WcfService1.dll.config
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\bin\WcfService1.dll
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\bin\WcfService1.pdb
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.csproj.AssemblyReference.cache
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.dll
+G:\SISE\C5\i\SERVICIOS WEB\PROYECTO\FanNote\Cliente_Vistas_Final\Cliente_Vistas\WcfService1\obj\Debug\WcfService1.pdb

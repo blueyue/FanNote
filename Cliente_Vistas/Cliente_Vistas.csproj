@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28573A80-9F24-4CDD-B406-61821357271F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cliente_Vistas</RootNamespace>
+    <AssemblyName>Cliente_Vistas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdministracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdministracion.Designer.cs">
+      <DependentUpon>FormAdministracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreacion.Designer.cs">
+      <DependentUpon>FormCreacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListado.Designer.cs">
+      <DependentUpon>FormListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Eadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Eadmin.Designer.cs">
+      <DependentUpon>M-Eadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Eagencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Eagencia.Designer.cs">
+      <DependentUpon>M-Eagencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Eartistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Eartistas.Designer.cs">
+      <DependentUpon>M-Eartistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Eeventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Eeventos.Designer.cs">
+      <DependentUpon>M-Eeventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Efan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Efan.Designer.cs">
+      <DependentUpon>M-Efan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Efandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Efandom.Designer.cs">
+      <DependentUpon>M-Efandom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Efotoscut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Efotoscut.Designer.cs">
+      <DependentUpon>M-Efotoscut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Efotosfan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Efotosfan.Designer.cs">
+      <DependentUpon>M-Efotosfan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Elinkstream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Elinkstream.Designer.cs">
+      <DependentUpon>M-Elinkstream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Epost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Epost.Designer.cs">
+      <DependentUpon>M-Epost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Eprensa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Eprensa.Designer.cs">
+      <DependentUpon>M-Eprensa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Erecursosartistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Erecursosartistas.Designer.cs">
+      <DependentUpon>M-Erecursosartistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Erecursosoficiales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Erecursosoficiales.Designer.cs">
+      <DependentUpon>M-Erecursosoficiales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M-Esubworld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M-Esubworld.Designer.cs">
+      <DependentUpon>M-Esubworld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioCliente.cs" />
+    <EmbeddedResource Include="FormAdministracion.resx">
+      <DependentUpon>FormAdministracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreacion.resx">
+      <DependentUpon>FormCreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListado.resx">
+      <DependentUpon>FormListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Eadmin.resx">
+      <DependentUpon>M-Eadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Eagencia.resx">
+      <DependentUpon>M-Eagencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Eartistas.resx">
+      <DependentUpon>M-Eartistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Eeventos.resx">
+      <DependentUpon>M-Eeventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Efan.resx">
+      <DependentUpon>M-Efan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Efandom.resx">
+      <DependentUpon>M-Efandom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Efotoscut.resx">
+      <DependentUpon>M-Efotoscut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Efotosfan.resx">
+      <DependentUpon>M-Efotosfan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Elinkstream.resx">
+      <DependentUpon>M-Elinkstream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Epost.resx">
+      <DependentUpon>M-Epost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Eprensa.resx">
+      <DependentUpon>M-Eprensa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Erecursosartistas.resx">
+      <DependentUpon>M-Erecursosartistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Erecursosoficiales.resx">
+      <DependentUpon>M-Erecursosoficiales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M-Esubworld.resx">
+      <DependentUpon>M-Esubworld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Connected Services\ServiceReference1\Cliente_Vistas.ServiceReference1.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\1846.jpg" />
+    <None Include="Recursos\26452.png" />
+    <None Include="Connected Services\ServiceReference1\Service1.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Recursos\background.jpg" />
+    <Content Include="Recursos\fannotelogo.png" />
+    <Content Include="Recursos\favicon.ico" />
+    <Content Include="Recursos\icons8-alinear-a-la-derecha-50.png" />
+    <None Include="Recursos\icons8-atrás-96.png" />
+    <Content Include="Recursos\icons8-búsqueda.gif" />
+    <None Include="Recursos\icons8-configuración-del-administrador-100.png" />
+    <None Include="Recursos\icons8-concert-96.png" />
+    <Content Include="Recursos\icons8-corona-48.png" />
+    <None Include="Recursos\icons8-evento-aceptado-64.png" />
+    <None Include="Recursos\icons8-nuevo-post-100.png" />
+    <None Include="Recursos\icons8-lugar-de-encuentro-de-seguridad-80.png" />
+    <None Include="Recursos\icons8-multitud-64.png" />
+    <None Include="Recursos\icons8-edificio-80.png" />
+    <Content Include="Recursos\icons8-sparkles-48.png" />
+    <Content Include="Recursos\icons850.png" />
+    <Content Include="Recursos\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursos\Cargar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

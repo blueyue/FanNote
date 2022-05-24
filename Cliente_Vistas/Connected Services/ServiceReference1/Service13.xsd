@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codusuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+      <xs:element minOccurs="0" name="idusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="imagen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="Post">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contenido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fotopost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idpost" type="xs:int" />
+      <xs:element minOccurs="0" name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Post" nillable="true" type="tns:Post" />
+  <xs:complexType name="Evento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idevento" type="xs:int" />
+      <xs:element minOccurs="0" name="lugar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="plataforma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="promotor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Evento" nillable="true" type="tns:Evento" />
+  <xs:complexType name="Artista">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agencia" type="xs:int" />
+      <xs:element minOccurs="0" name="debut" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fotoartista" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idartista" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Artista" nillable="true" type="tns:Artista" />
+  <xs:complexType name="Fandom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="creacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fotofandom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idartista" type="xs:int" />
+      <xs:element minOccurs="0" name="idfandom" type="xs:int" />
+      <xs:element minOccurs="0" name="miembros" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fandom" nillable="true" type="tns:Fandom" />
+  <xs:complexType name="Agencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fotoagencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idagencia" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:int" />
+      <xs:element minOccurs="0" name="web" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Agencia" nillable="true" type="tns:Agencia" />
+  <xs:complexType name="ROficial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="archivoficial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="evento" type="xs:int" />
+      <xs:element minOccurs="0" name="fotosoficial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" type="xs:int" />
+      <xs:element minOccurs="0" name="linkoficial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="weboficial" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ROficial" nillable="true" type="tns:ROficial" />
+  <xs:complexType name="ROArtista">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="archivoficial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="artista" type="xs:int" />
+      <xs:element minOccurs="0" name="evento" type="xs:int" />
+      <xs:element minOccurs="0" name="fandom" type="xs:int" />
+      <xs:element minOccurs="0" name="fotosoficial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id2" type="xs:int" />
+      <xs:element minOccurs="0" name="linkoficial" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ROArtista" nillable="true" type="tns:ROArtista" />
+  <xs:complexType name="Linkstream">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id2" type="xs:int" />
+      <xs:element minOccurs="0" name="link" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro" type="xs:int" />
+      <xs:element minOccurs="0" name="servidor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Linkstream" nillable="true" type="tns:Linkstream" />
+  <xs:complexType name="Subsworld">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id2" type="xs:int" />
+      <xs:element minOccurs="0" name="idioma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iduser" type="xs:int" />
+      <xs:element minOccurs="0" name="nro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subsworld" nillable="true" type="tns:Subsworld" />
+  <xs:complexType name="Prensa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id2" type="xs:int" />
+      <xs:element minOccurs="0" name="links" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Prensa" nillable="true" type="tns:Prensa" />
+  <xs:complexType name="Fotosfan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id2" type="xs:int" />
+      <xs:element minOccurs="0" name="iduser" type="xs:int" />
+      <xs:element minOccurs="0" name="nro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fotosfan" nillable="true" type="tns:Fotosfan" />
+  <xs:complexType name="Fotoscut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id2" type="xs:int" />
+      <xs:element minOccurs="0" name="iduser" type="xs:int" />
+      <xs:element minOccurs="0" name="link" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fotoscut" nillable="true" type="tns:Fotoscut" />
+  <xs:complexType name="Fan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="idfan" type="xs:int" />
+      <xs:element minOccurs="0" name="idfandom" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fan" nillable="true" type="tns:Fan" />
+</xs:schema>
